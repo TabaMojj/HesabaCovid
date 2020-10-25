@@ -1,14 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-{r, include = FALSE} knitr::opts\_chunk$set( collapse = TRUE, comment =
-“\#\>”, fig.path = “man/figures/README-”, out.width = “100%” )
 
 # HesabaCovid
-
-<!-- badges: start -->
-
-<!-- badges: end -->
 
 This package is part of Hesaba Internship tasks.
 
