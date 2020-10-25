@@ -5,6 +5,7 @@
 <!-- badges: end -->
 
 This package is part of Hesaba Internship tasks. \\
+
 This package have three functions:
 
 getData():
