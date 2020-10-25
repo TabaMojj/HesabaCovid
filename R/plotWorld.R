@@ -1,3 +1,16 @@
+#' @title plotWorld
+#'
+#' @description Plot daily cases in world map.
+#'
+#' @param plotType Type of plot: "Deaths" or "Confiremed"
+#' @param date e.g "2020-05-11"
+#'
+#' @return World map plot
+#'
+#' @examples plotWorld("Confiremed", "2020-05-11")
+#'
+#' @import rworldmap
+
 plotWorld <- function(plotType, date){
 
   HesabaCovid::getData() %>%

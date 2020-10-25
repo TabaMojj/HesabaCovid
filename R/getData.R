@@ -1,3 +1,13 @@
+#' @title getData
+#'
+#' @description Get COVID-19 data from John Hopkins University
+#'
+#' @return Dataset containing daily data
+#'
+#' @import tidyverse
+#'
+#' @examples
+#' df <- getData()
 
 getData <- function(){
 
@@ -53,4 +63,3 @@ getData <- function(){
 
   return(corona)
 }
-

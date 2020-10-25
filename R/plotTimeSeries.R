@@ -1,3 +1,17 @@
+#' @title plotTimeSeries
+#'
+#' @description Plot death and confiremed rates for a country between two dates
+#'
+#' @param country Country Name e.g. "Iran"
+#' @param dateFrom Starting date e.g. "2020-05-11"
+#' @param dateTo Ending Date e.g. "2020-08-05"
+#'
+#' @return Times series plot
+#'
+#' @example plotTimeSeries("Iran", "2020-05-11", "2020-08-05")
+#'
+#' @import tidyverse
+
 plotTimeSeries <- function(country, dateFrom, dateTo){
 
   HesabaCovid::getData() %>%
