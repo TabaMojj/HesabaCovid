@@ -8,9 +8,10 @@ This package is part of Hesaba Internship tasks.
 
 This package have three functions:
 
-getData():
-  You can get up-to-date COVID-19 data from Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE).
-  This dataset contains Country, Date, Deaths, Confiremed, Recovered and Cumulative data.
+getData(): 
+
+\quad You can get up-to-date COVID-19 data from Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE).
+\quad This dataset contains Country, Date, Deaths, Confiremed, Recovered and Cumulative data.
 
 plotWorld(plotType, date):
   Given a plot type and a date, this function can plot datas on world map.
