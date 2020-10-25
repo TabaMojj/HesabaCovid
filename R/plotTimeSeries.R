@@ -2,9 +2,9 @@ plotTimeSeries <- function(country, dateFrom, dateTo){
 
   HesabaCovid::getData() %>%
     filter(Country == country)%>%
-    subset(Date >= dateFrom & Date <= dateTo) -> iran
+    subset(Date >= dateFrom & Date <= dateTo) -> df
 
-  ggplot(iran, aes(x=Date)) +
+  ggplot(df, aes(x=Date)) +
     geom_line(color = c("#666666"), aes(y = Deaths), size = 1.2) +
     geom_line(color = c("#ab0303"), aes(y = Confiremed), size = 1.2) +
     ylab(" ") +
