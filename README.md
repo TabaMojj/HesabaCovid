@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package is part of Hesaba Internship tasks.
+This package is part of Hesaba Internship tasks. \\
 This package have three functions:
 
 getData():
@@ -34,11 +34,11 @@ devtools::install_github("TabaMojj/HesabaCovid")
 ``` r
 library(HesabaCovid)
 
-## df <- getData()
+df <- getData()
 
-## plotWorld("Deaths", "2020-05-11")
+plotWorld("Deaths", "2020-05-11")
 
-## plotTimeSeries("Iran", "2020-05-11", "2020-08-05")
+plotTimeSeries("Iran", "2020-05-11", "2020-08-05")
 
 ```
 
