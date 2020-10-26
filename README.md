@@ -1,5 +1,3 @@
-`r badge_bioc_release("ggtree", "green")`
-
 # About
 
 HesabaCovid is part of Hesaba Internship tasks.
