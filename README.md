@@ -37,6 +37,6 @@ install.packages(“devtools”)
 devtools::install_github("TabaMojj/HesabaCovid", build_vignettes = TRUE)
 ```
 
-## Vignette
+## Examples
 
-You can use ```r utils::vignette("HesabaCovid")``` 
+You can use ```r utils::vignette("HesabaCovid")``` to see examples.
