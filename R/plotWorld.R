@@ -9,6 +9,7 @@
 #'
 #' @examples plotWorld("Confirmed", "2020-05-11")
 #'
+#' @export
 #' @import tidyverse
 #' @import rworldmap
 
