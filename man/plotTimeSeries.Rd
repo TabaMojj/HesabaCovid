@@ -18,6 +18,8 @@ Times series plot
 }
 \description{
 Plot death and confirmed rates for a country between two dates
+
+Dates must be in "YYYY-MM-DD" format
 }
 \examples{
 plotTimeSeries("Iran", "2020-05-11", "2020-08-05")

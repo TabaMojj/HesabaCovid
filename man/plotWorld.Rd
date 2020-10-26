@@ -16,6 +16,10 @@ World map plot
 }
 \description{
 Plot daily cases in world map.
+
+Plot type can be "Deaths" or "Confirmed".
+
+Date must be in "YYYY-MM-DD" format.
 }
 \examples{
 plotWorld("Confirmed", "2020-05-11")
