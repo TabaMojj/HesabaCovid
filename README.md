@@ -1,6 +1,6 @@
-# HesabaCovid
+# About
 
-This package is part of Hesaba Internship tasks.
+HesabaCovid is part of Hesaba Internship tasks.
 
 This package have three functions:
 
