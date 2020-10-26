@@ -1,6 +1,7 @@
 #' @title plotTimeSeries
 #'
 #' @description Plot death and confirmed rates for a country between two dates
+#' @description Dates must be in "YYYY-MM-DD" format
 #'
 #' @param country Country Name e.g. "Iran"
 #' @param dateFrom Starting date e.g. "2020-05-11"

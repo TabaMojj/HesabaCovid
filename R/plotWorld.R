@@ -1,6 +1,8 @@
 #' @title plotWorld
 #'
 #' @description Plot daily cases in world map.
+#' @description Plot type can be "Deaths" or "Confirmed".
+#' @description Date must be in "YYYY-MM-DD" format.
 #'
 #' @param plotType Type of plot: "Deaths" or "Confirmed"
 #' @param date e.g "2020-05-11"
