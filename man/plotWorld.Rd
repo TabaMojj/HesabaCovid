@@ -7,7 +7,7 @@
 plotWorld(plotType, date)
 }
 \arguments{
-\item{plotType}{Type of plot: "Deaths" or "Confiremed"}
+\item{plotType}{Type of plot: "Deaths" or "Confirmed"}
 
 \item{date}{e.g "2020-05-11"}
 }
@@ -18,6 +18,6 @@ World map plot
 Plot daily cases in world map.
 }
 \examples{
-plotWorld("Confiremed", "2020-05-11")
+plotWorld("Confirmed", "2020-05-11")
 
 }

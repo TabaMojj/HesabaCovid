@@ -5,23 +5,24 @@
 #' @return Dataset containing daily data
 #'
 #' @import tidyverse
+#' @import rworldmap
 #'
 #' @examples
 #' df <- getData()
 
 getData <- function(){
 
-  confirmedURL <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
+  confirmdURL <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
 
-  read_csv(confirmedURL, col_types = cols()) %>%
+  read_csv(confirmdURL, col_types = cols()) %>%
     select(-'Province/State', -'Lat', -'Long') %>%
     rename("Country" = 'Country/Region')%>%
-    mutate(Country = as.factor(Country)) -> confiremedDF
+    mutate(Country = as.factor(Country)) -> confirmedDF
 
-  confiremedDF %>%
-    gather(key = 'Date', value = 'C', 2:ncol(confiremedDF)) %>%
+  confirmedDF %>%
+    gather(key = 'Date', value = 'C', 2:ncol(confirmedDF)) %>%
     group_by(Country, Date) %>%
-    summarise(Confiremed = sum(C)) -> confiremedDF
+    summarise(Confirmed = sum(C)) -> confirmedDF
 
   deathsURL <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv"
 
@@ -48,17 +49,17 @@ getData <- function(){
     group_by(Country, Date) %>%
     summarise(Recovered = sum(R)) -> recoveredDF
 
-  left_join(confiremedDF, deathsDF, by = c("Country", "Date")) %>%
+  left_join(confirmedDF, deathsDF, by = c("Country", "Date")) %>%
     left_join(recoveredDF, by = c("Country", "Date"))%>%
     mutate(Date = as.POSIXct(Date, format = "%m/%d/%y")) %>%
     arrange(Country, desc(Date)) %>%
     rename("CumulativeDeath" = Deaths,
-           "CumulativeConfiremed" = Confiremed,
+           "CumulativeConfirmed" = Confirmed,
            "CumulativeRecovered" = Recovered) %>%
     mutate(Deaths =  abs(lead(CumulativeDeath) - CumulativeDeath),
            Recovered =  abs(lead(CumulativeRecovered) - CumulativeRecovered),
-           Confiremed =  abs(lead(CumulativeConfiremed) - CumulativeConfiremed))%>%
-    select(Country, Date, Confiremed, Deaths, Recovered, CumulativeConfiremed, CumulativeDeath, CumulativeRecovered) %>%
+           Confirmed =  abs(lead(CumulativeConfirmed) - CumulativeConfirmed))%>%
+    select(Country, Date, Confirmed, Deaths, Recovered, CumulativeConfirmed, CumulativeDeath, CumulativeRecovered) %>%
     filter(!is.na(Date) & Date != "2020-01-22") -> corona
 
   return(corona)

@@ -1,6 +1,6 @@
 #' @title plotTimeSeries
 #'
-#' @description Plot death and confiremed rates for a country between two dates
+#' @description Plot death and confirmed rates for a country between two dates
 #'
 #' @param country Country Name e.g. "Iran"
 #' @param dateFrom Starting date e.g. "2020-05-11"
@@ -11,6 +11,7 @@
 #' @example plotTimeSeries("Iran", "2020-05-11", "2020-08-05")
 #'
 #' @import tidyverse
+#' @import rworldmap
 
 plotTimeSeries <- function(country, dateFrom, dateTo){
 
@@ -20,7 +21,7 @@ plotTimeSeries <- function(country, dateFrom, dateTo){
 
   ggplot(df, aes(x=Date)) +
     geom_line(color = c("#666666"), aes(y = Deaths), size = 1.2) +
-    geom_line(color = c("#ab0303"), aes(y = Confiremed), size = 1.2) +
+    geom_line(color = c("#ab0303"), aes(y = Confirmed), size = 1.2) +
     ylab(" ") +
     ggtitle(paste(country,"Rates From",dateFrom,"To", dateTo))+
     theme_minimal(base_line_size = 0.1)

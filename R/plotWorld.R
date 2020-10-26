@@ -2,13 +2,14 @@
 #'
 #' @description Plot daily cases in world map.
 #'
-#' @param plotType Type of plot: "Deaths" or "Confiremed"
+#' @param plotType Type of plot: "Deaths" or "Confirmed"
 #' @param date e.g "2020-05-11"
 #'
 #' @return World map plot
 #'
-#' @examples plotWorld("Confiremed", "2020-05-11")
+#' @examples plotWorld("Confirmed", "2020-05-11")
 #'
+#' @import tidyverse
 #' @import rworldmap
 
 plotWorld <- function(plotType, date){
@@ -32,7 +33,7 @@ plotWorld <- function(plotType, date){
     )
   }
 
-  if(plotType == "Confiremed"){
+  if(plotType == "Confirmed"){
     mapCountryData(
       cm,
       nameColumnToPlot = plotType,

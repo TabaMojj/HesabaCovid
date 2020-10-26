@@ -17,5 +17,5 @@ plotTimeSeries(country, dateFrom, dateTo)
 Times series plot
 }
 \description{
-Plot death and confiremed rates for a country between two dates
+Plot death and confirmed rates for a country between two dates
 }
