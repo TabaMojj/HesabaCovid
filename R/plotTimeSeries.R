@@ -8,7 +8,7 @@
 #'
 #' @return Times series plot
 #'
-#' @example plotTimeSeries("Iran", "2020-05-11", "2020-08-05")
+#' @examples plotTimeSeries("Iran", "2020-05-11", "2020-08-05")
 #'
 #' @import tidyverse
 #' @import rworldmap
