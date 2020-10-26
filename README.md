@@ -7,7 +7,6 @@ This package have three functions:
 ```r
 getData()
 ```
-badge_lifecycle(stage = "stable",color = "green")
 
 You can get up-to-date COVID-19 data from Johns Hopkins University
 Center for Systems Science and Engineering (JHU CSSE). This dataset
