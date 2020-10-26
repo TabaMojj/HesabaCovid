@@ -32,7 +32,7 @@ You can install the released version of HesabaCovid from
 [github](https://github.com/TabaMojj/HesabaCovid) with:
 
 r \# install.packages(“devtools”)
-devtools::install\_github(“TabaMojj/HesabaCovid”)
+devtools::install_github("TabaMojj/HesabaCovid", build_vignettes = TRUE)
 
 ## Example
 
