@@ -37,12 +37,6 @@ install.packages(“devtools”)
 devtools::install_github("TabaMojj/HesabaCovid", build_vignettes = TRUE)
 ```
 
-## Example
+## Vignette
 
-{r example} library(HesabaCovid)
-
-df \<- getData()
-
-plotWorld(“Deaths”, “2020-05-11”)
-
-plotTimeSeries(“Iran”, “2020-05-11”, “2020-08-05”)
+You can use ```r utils::vignette("HesabaCovid")``` 
