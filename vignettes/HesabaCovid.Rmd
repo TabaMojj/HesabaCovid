@@ -32,6 +32,7 @@ library(HesabaCovid)
 library(rworldmap)
 library(tidyverse)
 ```
+
 ## Examples
 
 ### getData(): 
@@ -43,6 +44,7 @@ This dataset contains Country, Date, Deaths, Confiremed, Recovered and Cumulativ
 df <- getData()
 head(df)
 ```
+
 ### plotTimeSeries(country, dateFrom, dateTo):
 
 This function can plot time series for a country between two dates.
@@ -55,6 +57,7 @@ plotTimeSeries(country = "Iran", dateFrom = "2020-05-11", dateTo = "2020-08-05")
 ```{r, fig.width=8}
 plotTimeSeries(country = "US", dateFrom = "2020-05-11", dateTo = "2020-08-05")
 ```
+
 ### plotWorld(plotType, date):
 
 Given a plot type and a date, this function can plot datas on world map.
