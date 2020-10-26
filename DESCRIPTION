@@ -1,13 +1,13 @@
 Package: HesabaCovid
-Title: Get COVID-19 datas and plots
-Version: 1.01
-Author: Mojtaba Yaghoobzadeh
-Description: use this package to get up-to-date COVID-19
-    data, plot data on world map and plot time series
+Title: Get latest COVID-19 data and plot
+Version: 1.1
+Authors@R: 
+    person(given = "Mojtaba",
+           family = "Yaghoobzadeh")
+Description: Get up-to-date data, plot time series and world
+    map.
 License: MIT
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-Suggests: 
-    testthat
