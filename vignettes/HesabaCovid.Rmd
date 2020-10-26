@@ -28,16 +28,18 @@ Remember to use this package, you need to import these packages:
 
 <br>
 
+```{r setup, include=FALSE}
+library(HesabaCovid)
+library(tidyverse)
+library(rworldmap)
+```
+
 # Examples
 
 ## getData()
 You can get up-to-date COVID-19 data from Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE).
 This dataset contains Country, Date, Deaths, Confiremed, Recovered and Cumulative data.
 ```{r}
-
-library(HesabaCovid)
-library(tidyverse)
-library(rworldmap)
 
 df <- getData()
 head(df)
@@ -48,17 +50,11 @@ plotTimeSeries can plot time series for a country between two dates.
 Date must be in "YYYY-MM-DD" format.
 
 ```{r, fig.width=7}
-library(HesabaCovid)
-library(tidyverse)
-library(rworldmap)
 
 plotTimeSeries(country = "Iran", dateFrom = "2020-05-10",dateTo =  "2020-08-05")
 ```
 
 ```{r, fig.width=7}
-library(HesabaCovid)
-library(tidyverse)
-library(rworldmap)
 
 plotTimeSeries(country = "US",dateFrom =  "2020-05-10",dateTo = "2020-08-05")
 ```
@@ -68,17 +64,11 @@ Given a plot type and a date, plotWorld function can plot datas on world map.
 Plot type can be "Deaths" or "Confiremed".
 Date must be in "YYYY-MM-DD" format.
 ```{r, fig.width=8, fig.height=7}
-library(HesabaCovid)
-library(tidyverse)
-library(rworldmap)
 
 plotWorld("Confirmed", "2020-10-22")
 ```
 
 ```{r, fig.width=8, fig.height=7}
-library(HesabaCovid)
-library(tidyverse)
-library(rworldmap)
 
 plotWorld("Deaths", "2020-10-22")
 ```
