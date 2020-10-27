@@ -7,6 +7,7 @@
 #' @export
 #'
 #' @import dplyr
+#' @import readr
 #' @import ggplot2
 #' @import rworldmap
 #'
