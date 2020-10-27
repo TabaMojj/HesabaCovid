@@ -2,7 +2,7 @@
 [![](https://img.shields.io/badge/lifecycle-maturing-green.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://cran.r-project.org/web/licenses/MIT)
 
-# About
+## About
 
 HesabaCovid is part of Hesaba Internship tasks.
 
@@ -36,7 +36,7 @@ must be in “YYYY-MM-DD” format.
 You can install the released version of HesabaCovid from
 [github](https://github.com/TabaMojj/HesabaCovid) with:
 
-``` bash
+```
 install.packages(“devtools”)
 devtools::install_github("TabaMojj/HesabaCovid", build_vignettes = TRUE)
 ```
