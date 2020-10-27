@@ -48,7 +48,7 @@ plotWorld <- function(plotType, date){
       addLegend = FALSE,
       mapTitle = paste(plotType, "in", date),
       catMethod = "categorical"
-      
+  
     )
   }
 }
