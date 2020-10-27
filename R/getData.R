@@ -6,6 +6,10 @@
 #'
 #' @export
 #'
+#' @import dplyr
+#' @import ggplot2
+#' @import rworldmap
+#'
 #' @examples
 #' df <- getData()
 

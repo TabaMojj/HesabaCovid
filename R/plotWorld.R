@@ -12,6 +12,9 @@
 #' @examples plotWorld("Confirmed", "2020-05-11")
 #'
 #' @export
+#' @import dplyr
+#' @import ggplot2
+#' @import rworldmap
 
 plotWorld <- function(plotType, date){
 

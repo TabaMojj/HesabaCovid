@@ -12,6 +12,9 @@
 #' @examples plotTimeSeries("Iran", "2020-05-11", "2020-08-05")
 #'
 #' @export
+#' @import dplyr
+#' @import ggplot2
+#' @import rworldmap
 
 plotTimeSeries <- function(country, dateFrom, dateTo){
 
