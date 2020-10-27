@@ -40,7 +40,6 @@ getData <- function(){
     group_by(Country, Date) %>%
     summarise(Deaths = sum(D)) -> deathsDF
 
-
   recoveredURL <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv"
 
   read_csv(recoveredURL, col_types = cols()) %>%
