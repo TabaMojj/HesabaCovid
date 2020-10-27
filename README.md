@@ -1,7 +1,7 @@
 [![](https://img.shields.io/badge/devel%20version-1.01-red.svg)](https://github.com/https://github.com/TabaMojj/HesabaCovid)
 [![](https://img.shields.io/badge/lifecycle-maturing-green.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://cran.r-project.org/web/licenses/MIT)
-# snakecase <img src="HesabaCovid.png" height="200" align="right">
+# HesabaCvovid <img src="HesabaCovid.png" height="200" align="right">
 
 ## About
 
