@@ -5,8 +5,6 @@
 #' @return Dataset containing daily data
 #'
 #' @export
-#' @import tidyverse
-#' @import rworldmap
 #'
 #' @examples
 #' df <- getData()
