@@ -3,5 +3,6 @@
 export(getData)
 export(plotTimeSeries)
 export(plotWorld)
+import(dplyr)
+import(ggplot2)
 import(rworldmap)
-import(tidyverse)
