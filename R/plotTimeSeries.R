@@ -30,5 +30,5 @@ plotTimeSeries <- function(country, dateFrom, dateTo){
     ylab(" ") +
     ggtitle(paste(country,"Rates From",dateFrom,"To", dateTo))+
     theme_minimal(base_line_size = 0.1)
-
+  
 }
