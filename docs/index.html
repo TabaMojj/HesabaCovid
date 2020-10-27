@@ -65,29 +65,29 @@
   <div class="contents col-md-9">
 
 
-<div id="about" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#about" class="anchor"></a>About</h1></div>
+<div id="about" class="section level2">
+<h2 class="hasAnchor">
+<a href="#about" class="anchor"></a>About</h2>
 <p>HesabaCovid is part of Hesaba Internship tasks.</p>
 <p>This package have three functions:</p>
 <pre><code><a href="reference/getData.html">getData()</a></code></pre>
 <p>You can get up-to-date COVID-19 data from Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). This dataset contains Country, Date, Deaths, Confiremed, Recovered and Cumulative data.</p>
 <pre><code><a href="reference/plotWorld.html">plotWorld(plotType, date)</a></code></pre>
 <p>Given a plot type and a date, this function can plot datas on world map. Plot type can be “Deaths” or “Confiremed”. Date must be in “YYYY-MM-DD” format.</p>
-<pre><code>plotTimeSeries(country, dateFrom, dateTo):</code></pre>
+<pre><code><a href="reference/plotTimeSeries.html">plotTimeSeries(country, dateFrom, dateTo)</a></code></pre>
 <p>This function can plot time series for a country between two dates. Date must be in “YYYY-MM-DD” format.</p>
+</div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install the released version of HesabaCovid from <a href="https://github.com/TabaMojj/HesabaCovid">github</a> with:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">install.packages</span>(“devtools”)</a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="ex">devtools</span>::install_github(<span class="st">"TabaMojj/HesabaCovid"</span>, build_vignettes = TRUE)</a></code></pre></div>
+<pre><code>install.packages(“devtools”)
+devtools::install_github("TabaMojj/HesabaCovid", build_vignettes = TRUE)</code></pre>
 </div>
 <div id="examples" class="section level2">
 <h2 class="hasAnchor">
 <a href="#examples" class="anchor"></a>Examples</h2>
 <p>You can use <code><a href="articles/HesabaCovid.html">utils::vignette("HesabaCovid")</a></code> to see examples.</p>
-</div>
 </div>
 
   </div>
@@ -102,7 +102,7 @@
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html">All authors...</a></li>
+<li>Mojtaba Yaghoobzadeh <br><small class="roles"> Maintainer </small>  </li>
 </ul>
 </div>
 
@@ -119,7 +119,7 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p>Developed by Mojtaba Yaghoobzadeh.</p>
 </div>
 
 <div class="pkgdown">
