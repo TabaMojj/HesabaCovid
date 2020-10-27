@@ -44,4 +44,5 @@ devtools::install_github("TabaMojj/HesabaCovid", build_vignettes = TRUE)
 ## Examples
 
 You can use `utils::vignette("HesabaCovid")` to see examples.
+
 Also, you can visit [HesabaCovid website](https://tabamojj.github.io/HesabaCovid/) for more information.
