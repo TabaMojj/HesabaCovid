@@ -25,7 +25,7 @@ Plot type can be “Deaths” or “Confiremed”. Date must be in “YYYY-MM-DD
 format.
 
 ```
-plotTimeSeries(country, dateFrom, dateTo):
+plotTimeSeries(country, dateFrom, dateTo)
 ```
 
 This function can plot time series for a country between two dates. Date
