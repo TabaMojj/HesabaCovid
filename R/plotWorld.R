@@ -14,6 +14,7 @@
 #' @export
 #' @import dplyr
 #' @import readr
+#' @import tidyr
 #' @import ggplot2
 #' @import rworldmap
 

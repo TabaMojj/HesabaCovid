@@ -10,7 +10,7 @@
 #' @import readr
 #' @import ggplot2
 #' @import rworldmap
-#'
+#' @import tidyr
 #' @examples
 #' df <- getData()
 

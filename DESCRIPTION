@@ -15,4 +15,5 @@ Imports:
     dplyr,
     readr,
     ggplot2,
-    rworldmap
+    rworldmap,
+    tidyr
