@@ -2,8 +2,8 @@ Package: HesabaCovid
 Title: Get latest COVID-19 data and plot
 Version: 1.1
 Authors@R: 
-    person(given = "Mojtaba",
-           family = "Yaghoobzadeh")
+    person("Mojtaba", "Yaghoobzadeh", email = "mirmojtaba21@gmail.com",
+  role = "cre")
 Description: Get up-to-date data, plot time series and world
     map.
 License: MIT
